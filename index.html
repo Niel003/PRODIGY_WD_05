@@ -1,24 +1,54 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-57MZJSJ8KW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-57MZJSJ8KW');
-</script>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3D Weather Application</title>
-  <meta property="og:title" content="Futuristic 3D Weather Application" />
-  <meta property="og:description" content="Real-time 3D interactive weather visualization platform." />
-  <meta property="og:image" content="/og-image.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="/og-image.png" />
-</head>
+      gtag('config', 'G-57MZJSJ8KW');
+    </script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO Metadata -->
+    <title>VaporDeck | 3D Weather & Solar Trajectory Forecast</title>
+    <meta name="title" content="VaporDeck | 3D Weather & Solar Trajectory Forecast" />
+    <meta name="description" content="VaporDeck is an interactive 3D weather visualizer featuring real-time atmospheric metrics, solar trajectory tracking, and hyper-local forecasts." />
+    <meta name="keywords" content="VaporDeck, 3D weather app, solar trajectory forecast, real-time weather metrics, interactive weather visualizer, sun position tracker" />
+    <meta name="author" content="Niel003" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vapordeck.netlify.app/" />
+    <meta property="og:title" content="VaporDeck | 3D Weather & Solar Trajectory Forecast" />
+    <meta property="og:description" content="Track live weather conditions alongside an interactive 3D solar trajectory visualizer on VaporDeck." />
+    <meta property="og:image" content="https://vapordeck.netlify.app/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://vapordeck.netlify.app/" />
+    <meta name="twitter:title" content="VaporDeck | 3D Weather & Solar Trajectory Forecast" />
+    <meta name="twitter:description" content="Track live weather conditions alongside an interactive 3D solar trajectory visualizer on VaporDeck." />
+    <meta name="twitter:image" content="https://vapordeck.netlify.app/og-image.png" />
+
+    <!-- JSON-LD Structured Data for Search Engine Indexing -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "VaporDeck",
+      "url": "https://vapordeck.netlify.app",
+      "applicationCategory": "WeatherApplication",
+      "operatingSystem": "All",
+      "description": "Real-time weather application featuring interactive 3D solar trajectory visualization and atmospheric metrics."
+    }
+    </script>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
